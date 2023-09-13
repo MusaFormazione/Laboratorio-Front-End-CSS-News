@@ -1,0 +1,27 @@
+article {
+  width: 50%;
+  container-name: mycontainer;
+  container-type: inline-size;
+}
+
+.content {
+  background-color: lightblue;
+}
+
+@container mycontainer (width > 400px) {
+  .content {
+    background-color: red;
+  }
+}
+
+div {
+  padding: 40px;
+  margin: 40px;
+  background-color: blue;
+}
+
+@media (min-width: 600px) {
+  div {
+    background-color: red;
+  }
+}

@@ -1,0 +1,54 @@
+@layer reset, framework, base, custom;
+
+@layer custom {
+  p {
+    background-color: orange;
+  }
+}
+
+@layer reset {
+  html, body {
+    height: 100%;
+  }
+  h1,h2,h3 {
+    margin: 0;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+/* Esempio di come potrei importare un framework / libreria CSS */
+@layer framework {
+  @import url();
+}
+
+@layer base {
+  #my-text {
+    background-color: purple;
+  }
+  .text {
+    background-color: green;
+  }
+}
+
+.text {
+  background-color: blue;
+}
+
+div p {
+  background-color: red;
+}
+
+/* In ordine di importanza (il livello più in basso sovrascrive i livelli più in alto) 
+- browser
+- user
+
+----- layers
+- layer1
+- layer2
+- layer3
+-----
+
+- author
+*/

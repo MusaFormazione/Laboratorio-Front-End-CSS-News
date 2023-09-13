@@ -1,0 +1,28 @@
+section {
+  background-color: rgb(65, 67, 68);
+  display: flex;
+  gap: 1rem;
+}
+
+article {
+  background-color: lightgray;
+}
+
+@container style(--detail: new) {
+  h2 {
+    color: red;
+    font-size: 2rem;
+  }
+}
+.new h2 {
+  color: red;
+  font-size: 2rem;
+}
+
+@container style(--detail: sale) {
+  h2 {
+    color: darkcyan;
+    font-size: 2rem;
+    background-color: lightblue;
+  }
+}

@@ -1,0 +1,6 @@
+li:nth-child(even of .highlight) {
+  background-color: lightcoral;
+}
+li:nth-child(odd of .highlight) {
+  background-color: rgb(236, 128, 240);
+}

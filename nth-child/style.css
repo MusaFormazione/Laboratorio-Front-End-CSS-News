@@ -1,0 +1,24 @@
+ul {
+  list-style-type: none;
+  background-color: lightgray;
+}
+
+li {
+  padding: 50px;
+  margin: 20px
+}
+
+/* :nth-child(An + B) 
+A step
+n counter (parte da 0)
+B offset 
+*/
+li:nth-child(2n + 4) {
+  /* 4,6,8,10... */
+  background-color: gray;
+}
+
+li:nth-child(2n + 1) {
+  /* 1, 3, 5... */
+  background-color: rgb(182, 182, 182);
+}

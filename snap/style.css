@@ -1,0 +1,27 @@
+/* scroll-snap-type */
+section {
+  padding: 20px;
+  height: 500px;
+  background-color: lightcoral;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y proximity; */
+}
+
+article {
+  color: white;
+  font-size: 2rem;
+  height: 700px;
+  scroll-snap-align: start;
+  /* scroll-snap-align: center; */
+}
+
+.red {
+  background-color: rgb(77, 20, 20);
+}
+.blue {
+  background-color: rgb(9, 9, 48);
+}
+.green {
+  background-color: rgb(11, 62, 11);
+}

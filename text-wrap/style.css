@@ -1,0 +1,16 @@
+section {
+  display: flex;
+  gap: 10px;
+}
+article {
+  background-color: lightgray;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.balance {
+  text-wrap: balance;
+}

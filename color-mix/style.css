@@ -1,0 +1,48 @@
+:root {
+  --primary-color: rgb(255, 0, 68);
+  --size-lg: 50px;
+  --size-md: 25px;
+}
+
+body {
+  margin: 0;
+}
+
+/* section {
+  --mia-var: 25px;
+} */
+
+div {
+  padding: var(--size-lg);
+  margin: 40px;
+}
+
+.mix {
+  /* background-color: rgb(66, 43, 130); */
+  background-color: color-mix(in srgb, red 50%, yellow 50%);
+}
+.red {
+  background-color: var(--primary-color);
+}
+.shade-75 {
+  background-color: color-mix(in srgb, var(--primary-color) 75%, black);
+}
+.shade-50 {
+  background-color: color-mix(in srgb, var(--primary-color) 50%, black);
+}
+.shade-25 {
+  background-color: color-mix(in srgb, var(--primary-color) 25%, black);
+}
+
+button {
+  padding: 2rem 3rem;
+  cursor: pointer;
+  color: white;
+  background-color: color-mix(in srgb, var(--primary-color) 70%, white);
+}
+button:hover {
+  background-color: color-mix(in srgb, var(--primary-color) 90%, white);
+}
+button[disabled] {
+  background-color: color-mix(in srgb, var(--primary-color) 20%, white);
+}

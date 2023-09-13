@@ -1,0 +1,36 @@
+@layer reset, custom;
+
+@layer custom {
+  section {
+    height: 90vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    /* scroll-padding-top: 50px; */
+    /* scroll-snap-type: x mandatory; */
+    /* display: flex; */
+  }
+
+  article {
+    scroll-snap-align: center;
+    /* scroll-margin-top: 100px; */
+  }
+
+  img {
+    /* object-fit: cover; */
+    /* height: 100%; */
+    /* width: auto; */
+  }
+}
+
+
+@layer reset {
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
